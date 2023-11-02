@@ -14,16 +14,17 @@
 
 - Old layout:
 
-  1. s_tokenToAssetToken
-  2. s_feePrecision
-  3. s_flashLoanFee
-  4. s_currentlyFlashLoaning
+1. s_tokenToAssetToken
+2. s_feePrecision
+3. s_flashLoanFee
+4. s_currentlyFlashLoaning
 
 - New layout:
-  1. s_tokenToAssetToken
-  2. s_flashLoanFee
-  3. FEE_PRECISION
-  4. s_currentlyFlashLoaning
+
+1. s_tokenToAssetToken
+2. s_flashLoanFee
+3. FEE_PRECISION
+4. s_currentlyFlashLoaning
 
 ---
 
