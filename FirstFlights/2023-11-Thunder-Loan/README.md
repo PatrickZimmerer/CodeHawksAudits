@@ -40,6 +40,8 @@
 
 - **`getCalculatedFee()` & `updateFlashloanFee` needs to be checked after the storage slot fuck up!!**
 
+---
+
 ### Prize Pool
 
 - High - 100xp
@@ -54,27 +56,27 @@
 - nSLOC: 387
 - Complexity Score: 325
 
-## A flash loan protocol based on [Aave](https://aave.com/) and [Compound](https://compound.finance/).
+## A flash loan protocol based on [Aave](https://aave.com/) and [Compound](https://compound.finance/)
 
 - [First Flight by CodeHawks: Thunder Loan](#first-flight-by-codehawks-thunder-loan)
   - [Questions, Ideas and Observations](#questions-ideas-and-observations)
     - [Prize Pool](#prize-pool)
   - [Stats](#stats)
-  - [A flash loan protocol based on Aave and Compound.](#a-flash-loan-protocol-based-on-aave-and-compound)
-- [About](#about)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
+  - [A flash loan protocol based on Aave and Compound](#a-flash-loan-protocol-based-on-aave-and-compound)
+  - [About](#about)
+  - [Getting Started](#getting-started)
+    - [Requirements](#requirements)
+    - [Quickstart](#quickstart)
     - [Optional Gitpod](#optional-gitpod)
-- [Usage](#usage)
-  - [Testing](#testing)
-    - [Test Coverage](#test-coverage)
-  - [Audit Scope Details](#audit-scope-details)
+  - [Usage](#usage)
+    - [Testing](#testing)
+      - [Test Coverage](#test-coverage)
+    - [Audit Scope Details](#audit-scope-details)
   - [Compatibilities](#compatibilities)
   - [Roles](#roles)
   - [Known Issues](#known-issues)
 
-# About
+## About
 
 The ⚡️ThunderLoan⚡️ protocol is meant to do the following:
 
@@ -91,18 +93,18 @@ Users additionally have to pay a small fee to the protocol depending on how much
 
 We are planning to upgrade from the current `ThunderLoan` contract to the `ThunderLoanUpgraded` contract. Please include this upgrade in scope of a security review.
 
-# Getting Started
+## Getting Started
 
-## Requirements
+### Requirements
 
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
   - You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
 - [foundry](https://getfoundry.sh/)
   - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
 
-## Quickstart
+### Quickstart
 
-```
+```shell
 git clone https://github.com/Cyfrin/2023-11-Thunder-Loan
 cd 2023-11-Thunder-Loan
 make
@@ -114,32 +116,32 @@ If you can't or don't want to run and install locally, you can work with this re
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Cyfrin/6-thunder-loan-audit)
 
-# Usage
+## Usage
 
-## Testing
+### Testing
 
-```
+```shell
 forge test
 ```
 
-### Test Coverage
+#### Test Coverage
 
-```
+```shell
 forge coverage
 ```
 
 and for coverage based testing:
 
-```
+```shell
 forge coverage --report debug
 ```
 
-## Audit Scope Details
+### Audit Scope Details
 
 - Commit Hash: e8ce05f5530ca965165d41547b289604f873fdf6
 - In Scope:
 
-```
+```shell
 ├── interfaces
 │   ├── IFlashLoanReceiver.sol
 │   ├── IPoolFactory.sol
